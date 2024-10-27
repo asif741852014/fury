@@ -1,0 +1,14 @@
+name: mil
+on:
+  pull_request:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "hai from job1"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "hai from job2"
+        exit 1
